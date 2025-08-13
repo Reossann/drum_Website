@@ -1,0 +1,9 @@
+# コンパイル後のJavaScriptファイル
+*.js
+*.js.map
+
+# Node.jsの依存関係フォルダ (もし使っていれば)
+node_modules
+
+# OSが自動生成するファイル
+.DS_Store
