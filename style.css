@@ -1,0 +1,52 @@
+/* ページの基本設定 */
+body {
+  background: #1e1e1e; /* 背景を濃い灰色に */
+  display: flex;
+  justify-content: center; /* 要素を水平方向中央に */
+  align-items: center; /* 要素を垂直方向中央に */
+  min-height: 100vh; /* 画面の高さいっぱいに表示 */
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* キー全体を囲むコンテナ */
+.keys {
+  display: flex;
+  gap: 1rem; /* キー同士の間隔 */
+}
+
+/* 各キーの基本スタイル */
+.key {
+  border: 4px solid #444; /* 枠線 */
+  border-radius: 8px; /* 角を丸く */
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  /* 変化を滑らかにするアニメーション設定 */
+  transition: all 0.07s ease;
+}
+
+/* キーに表示される文字（A, S, Dなど） */
+.key kbd {
+  display: block;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+/* サウンド名（clap, hihatなど） */
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600; /* 黄色っぽい色 */
+}
+
+/* ★★★ここが一番重要★★★ */
+/* TypeScriptによって追加されるクラス */
+.playing {
+  transform: scale(1.1); /* 少し大きくする */
+  border-color: #ffc600; /* 枠線を黄色っぽく */
+  box-shadow: 0 0 1rem #ffc600; /* 周りに光彩（グロー）を追加 */
+}
