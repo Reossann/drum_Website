@@ -7,11 +7,25 @@ body {
   min-height: 100vh; /* 画面の高さいっぱいに表示 */
   font-family: sans-serif;
   margin: 0;
+  border: solid 3px red;
+}
+
+.up,
+.down {
+  display: flex;
+  gap: 1rem;
+  border: solid 2px rebeccapurple;
+}
+
+.up {
+  justify-content: center; /* この一行を追加！ 上の段を中央揃えにする */
+  margin-bottom: 2rem;
 }
 
 /* キー全体を囲むコンテナ */
 .keys {
   display: flex;
+  flex-direction: column;
   gap: 1rem; /* キー同士の間隔 */
 }
 

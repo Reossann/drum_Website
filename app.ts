@@ -17,11 +17,12 @@ function removeTransition(e: TransitionEvent): void {
 }
 
 // 1. すべての.key要素を取得
-let keys = document.querySelectorAll<HTMLDivElement>('.key');
+// 👇 let を const に戻します
+const keys = document.querySelectorAll<HTMLDivElement>('.key');
 // 2. それぞれのキーに、transitionendイベントの監視を設定
 keys.forEach(key => key.addEventListener('transitionend', removeTransition as EventListener));
 
 // ページ全体でキーボードが押されるのを監視
 window.addEventListener('keydown', playSound);
 
-export {};
+// export {}; // ◀️ この行を削除します

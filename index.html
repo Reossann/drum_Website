@@ -6,17 +6,57 @@
     <title>TS drum</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='app.js' type="module" defer></script>
+    <script src='app.js' defer></script>
 </head>
 <body>
     <div class="keys">
+        <div class="up">
         <div data-key="a" class="key">
             <kbd>A</kbd>
-            <span class="sound">closecynbal</span>
+            <span class="sound">1cynbal</span>
+        </div>
+        <div data-key="d" class="key">
+            <kbd>D</kbd>
+            <span class="sound">snea</span>
+        </div>
+        <div data-key="g" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Bass</span>
+        </div>
+        <div data-key="j" class="key">
+            <kbd>J</kbd>
+            <span class="sound">2cynbal</span>
+        </div>
+        </div>
+        <div class="down">
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">2snea</span>
+        </div>
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">2snea</span>
+        </div>
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">2snea</span>
+        </div>
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">2snea</span>
+        </div>
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">2snea</span>
+        </div>
         </div>
     </div>
 
     <audio data-key="a" src="sounds/closecynbal.wav"></audio>
+    <audio data-key="d" src="sounds/1snare.wav"></audio>
+    <audio data-key="g" src="sounds/kick_robotics.wav"></audio>
+    <audio data-key="j" src="sounds/2cymbal.wav"></audio>
+    <audio data-key="l" src="sounds/closecynbal.wav"></audio>
 
     
 </body>
