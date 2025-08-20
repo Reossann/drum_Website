@@ -1,5 +1,3 @@
-// --- ここからコピー ---
-
 // キーが押された時に実行される関数
 function playSound(e: KeyboardEvent): void {
   const audio = document.querySelector<HTMLAudioElement>(`audio[data-key="${e.key}"]`);
@@ -19,11 +17,11 @@ function removeTransition(e: TransitionEvent): void {
 }
 
 // 1. すべての.key要素を取得
-const keys = document.querySelectorAll<HTMLDivElement>('.key');
+let keys = document.querySelectorAll<HTMLDivElement>('.key');
 // 2. それぞれのキーに、transitionendイベントの監視を設定
 keys.forEach(key => key.addEventListener('transitionend', removeTransition as EventListener));
 
 // ページ全体でキーボードが押されるのを監視
 window.addEventListener('keydown', playSound);
 
-// --- ここまでコピー ---
+export {};
