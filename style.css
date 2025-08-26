@@ -54,13 +54,50 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600; /* 黄色っぽい色 */
+  color: black; /* 黄色っぽい色 */
 }
 
 /* ★★★ここが一番重要★★★ */
 /* TypeScriptによって追加されるクラス */
 .playing {
   transform: scale(1.1); /* 少し大きくする */
-  border-color: #ffc600; /* 枠線を黄色っぽく */
-  box-shadow: 0 0 1rem #ffc600; /* 周りに光彩（グロー）を追加 */
+  box-shadow: 0 0 1rem white;
+}
+
+.Cynbal_1.playing {
+  border-color: #FFD700;
+  box-shadow: 0 0 1rem #FFD700;
+}
+
+.Cynbal_1.key {
+  background: #FFD700
+}
+
+.Snea.playing {
+  border-color: #F5DEB3;
+  box-shadow: 0 0 1rem #F5DEB3;
+}
+
+.Snea.key {
+  background: #F5DEB3
+}
+
+
+.Bass.playing {
+  border-color: #483D8B;
+  box-shadow: 0 0 1rem #483D8B;
+}
+
+.Bass.key {
+  background: #483D8B
+}
+
+
+.Cynbal_2.playing {
+  border-color: #C0C0C0;
+  box-shadow: 0 0 1rem #C0C0C0;
+}
+
+.Cynbal_2.key {
+  background: #C0C0C0
 }
