@@ -26,3 +26,5 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition as Ev
 window.addEventListener('keydown', playSound);
 
 // export {}; // ◀️ この行を削除します
+
+//まず音加えるかな
