@@ -28,3 +28,4 @@ window.addEventListener('keydown', playSound);
 // export {}; // ◀️ この行を削除します
 
 //まず音加えるかな
+//音がおもろくてコード全然かけない
